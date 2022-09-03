@@ -1,11 +1,16 @@
 html {
   scroll-behavior: smooth;
+
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body{
+  min-width: 260px; 
 }
 
 a {
@@ -303,4 +308,15 @@ i {
     justify-content: center;
     text-align: center;
   }
+}
+
+
+/* menu icon */
+.resNav{
+  display: flex;
+  flex-direction: column;
+  transition: 1s ease-in-out;
+  position: absolute;
+  top : 0; 
+  height: 300px;
 }
