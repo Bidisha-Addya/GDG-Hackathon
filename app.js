@@ -63,7 +63,11 @@ app.post("/signup",(req, res) => {
       latitude : req.body.latitude, 
       longitude : req.body.longitude
     }
- }); 
+ });
+ 
+ app.get("/chart", (req, res)=>{
+  res.render('chart'); 
+ })
 
 }); 
 

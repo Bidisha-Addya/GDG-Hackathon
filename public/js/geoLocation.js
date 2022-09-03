@@ -15,6 +15,8 @@ function sharePosition(position) {
       position.coords.latitude +
       "<br>Longitude: " +
       position.coords.longitude + "<br>" + position
+
+      
   );
 }
 
