@@ -2,7 +2,6 @@ const express = require("express");
 // const parse = require('node-html-parser'); not using this.
 const https = require("https");
 
-
 const port = 3000;
 
 
@@ -33,6 +32,40 @@ app.get("/", function (req, res) {
   });
   res.render('index'); 
 });
+
+app.get("/signup",(req, res) => {
+  res.render('signup'); 
+}); 
+
+app.post("/signup",(req, res) => {
+  
+  const userSchema = new mongoose.Schema({
+    fullName : String, 
+    email : String, 
+    phone : String, 
+    gender : String, 
+    pass : String, 
+    geoLocation : {
+      latitude : Number, 
+      longitude : Number
+    }
+  }); 
+
+  const User = mongoose.model('User', userSchema); 
+
+  const user = new User({
+     fullName : req.body.name,
+     email : req.body.email,
+     phone : req.body.phone,
+     gender : req.body.gender,
+     pass : req.body.pass,
+     geoLocation : {
+      latitude : req.body.latitude, 
+      longitude : req.body.longitude
+    }
+ }); 
+
+}); 
 
 app.listen(port, function () {
   console.log("Server is running at port " + port);
