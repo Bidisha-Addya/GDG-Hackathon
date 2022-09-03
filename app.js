@@ -115,6 +115,15 @@ const isAuth = (req, res, next)=>{
     res.redirect("/login"); 
   }
 }
+
+app.post("/logout", (req,res)=>{
+  req.session.destroy((err)=>{
+    if(err){
+      throw error; 
+    }
+    res.redirect("/"); 
+  })
+}); 
 app.get("/chart", (req, res)=>{
   res.render('chart'); 
  }); 
