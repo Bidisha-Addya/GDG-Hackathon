@@ -1,0 +1,11 @@
+{
+  "name": "gdg-hackathon",
+  "version": "1.0.0",
+  "description": "GDG hackathon jalandhar.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sunny",
+  "license": "ISC"
+}
