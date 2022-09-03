@@ -37,7 +37,7 @@ font-family: "ARIAL", Times, serif;
 .header {
   width: 100%;
   height: 100vh;
-  background-image: url(images/agriculture2.jpg);
+  background-image: url('/images/agriculture2.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   clip-path: polygon(100% 0%, 100% 75%, 50% 100%, 0% 75%, 0 0);
@@ -69,11 +69,11 @@ font-family: "ARIAL", Times, serif;
 .brishti {
   width: 100%;
   height: 100vh;
-  background-image: url(images/agriculture1.jpg);
+  background-image: url('/images/agriculture1.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   clip-path: polygon(100% 0%, 100% 75%, 50% 100%, 0% 75%, 0 0);
-  position: relative;
+ 
 }
 
 .header-section {
